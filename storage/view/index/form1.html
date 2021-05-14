@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>{$user['name']}</title>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script src="https://webrtc.github.io/adapter/adapter-4.2.2.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<link href="//at.alicdn.com/t/font_281215_1cjkie4sgkm.css" rel="stylesheet"/>
+		<link href="css/chat.css" rel="stylesheet" />
+	</head>
+	
+	<body>
+		 
+	   
+	</body>
+</html>
+<script>
+	var user={};
+	user['id']="{$user['id']}";
+	user['name']="{$user['name']}";
+	user['avatar']="{$user['avatar']}";
+	
+    setCookie('user',JSON.stringify(user));
+    
+    
+    
+</script>
+<script src="js/chat.js"></script>

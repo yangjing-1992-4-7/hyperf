@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/cookie.js"></script>	
+		<script type="text/javascript" src="js/layui/layui.js"></script>
+		<script type="text/javascript" src="js/login.js"></script>
+		<link href="js/layui/css/layui.css" rel="stylesheet" />
+		<link href="css/login.css" rel="stylesheet" />
+	</head>
+	
+	<body>
+		<div id="mydiv">
+	        <div class="login-main">
+	            <div class="layui-elip">注册</div>
+	            <form class="layui-form" action="/reg">
+	                <div class="layui-form-item">
+	                    <div class="layui-input-inline input-item">
+	                        <label for="username">用户名</label>
+	                        <input type="text" name="username" lay-verify="required" autocomplete="new-password" placeholder="账号" class="layui-input">
+	                    </div>
+	                    <div class="layui-input-inline input-item">
+	                        <label for="password">密码</label>
+	                        <input type="password" name="password" lay-verify="required" autocomplete="new-password" placeholder="密码" class="layui-input layui-input_password">
+	                    </div>
+	                    <div class="layui-input-inline input-item">
+	                        <label for="password_confirmation">确认密码</label>
+	                        <input type="password" name="password_confirmation" lay-verify="required" autocomplete="new-password" placeholder="确认密码" class="layui-input layui-input_password">
+	                    </div>
+	                    <div class="layui-form-item block">
+							<label class="layui-form-label">滑动验证</label>
+							<div class="layui-input-block">
+								<div id="slider"></div>
+							</div>
+						</div>
+	                    <div class="layui-input-inline login-btn">
+	                        <button class="layui-btn " lay-filter="login" lay-submit="">注册</button>
+	                    </div>
+	                    <span class="red_reg">已有账号？去<a href="/reg" title="登录">登录</a></span>
+	                </div>
+	            </form>
+	        </div>
+	    </div>
+	</body>
+</html>
+
